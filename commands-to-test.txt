@@ -2,4 +2,4 @@ git clone https://github.com/gerac83/rango_tests
 /* Go to downloaded rango_tests*/
 
 /*specify your repo, folder where to save report, todays date*/
-python run_tests.py -u https://github.com/Daumis102/tango_with_django_project -s 2267352p -d 2018-01-19
+python run_tests.py -u https://github.com/igniushka/tango_with_django_project -s 2268993k -d 2018-01-25
