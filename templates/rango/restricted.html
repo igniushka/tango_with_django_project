@@ -1,0 +1,35 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+{% block title_block %}
+This page is for users only ;)
+{% endblock %}
+
+{% block body_block %}
+	{% if user.is_authenticated %}
+	<div>
+		<h2>So {{ user.username }},</br>    ...you like Nick Cage huh?<h2>
+	</div>
+	<div>
+	<img src="{% static "images/nic5.jpg" %}"/>
+	<img src="{% static "images/nic8.jpg" %}"/>
+	<img src="{% static "images/nic9.jpg" %}"/>
+	</div>
+	<div>
+	<img src="{% static "images/nic3.jpg" %}"/>
+	<img src="{% static "images/nic2.jpg" %}"/>
+	<img src="{% static "images/nic7.jpg" %}"/>
+	</div>
+	<div>
+	<img src="{% static "images/nic6.jpg" %}"/>
+	<img src="{% static "images/nic1.jpg" %}"/>
+	<img src="{% static "images/nic10.jpg" %}"/>
+	</div>
+	<div>
+	<img src="{% static "images/nic4.jpg" %}"/>
+	</div>
+
+
+{% else %}
+<h2> Log in to view some >"Quality Content" </h2>
+{% endif %}
+{% endblock %}
