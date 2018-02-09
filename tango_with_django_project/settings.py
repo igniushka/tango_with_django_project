@@ -21,6 +21,7 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
 LOGIN_URL = '/rango/login/'
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 # Quick-start development settings - unsuitable for production
